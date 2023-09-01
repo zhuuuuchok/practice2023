@@ -1,11 +1,11 @@
 import re
 import os
 #проверка существования файла
-file_path = "C:\\Users\\Юлия\\.vscode\\input.txt"
+file_path = "input.txt"
 if os.access(file_path, os.F_OK) == True:
             print("Файл существует")
 
-with open('C:\\Users\\Юлия\\.vscode\\input.txt' , 'r') as f:
+with open('input.txt' , 'r') as f:
     text = f.read()
 
 sentences = re.split(r'[.!?]+[\n]', text)
