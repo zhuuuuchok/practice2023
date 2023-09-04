@@ -1,11 +1,11 @@
 import csv
 import os
 #проверка существования файла
-file_path = "C:\\Users\\Юлия\\.vscode\\data.csv"
+file_path = "data.csv"
 if os.access(file_path, os.F_OK) == True:
             print("Файл существует")
 
-with open('C:\\Users\\Юлия\\.vscode\\data.csv', newline='') as csvfile:
+with open('data.csv', newline='') as csvfile:
     reader = csv.reader(csvfile,delimiter=(','))
 # next считывает первую строку файла,к-я является заголовочной
     head = next(reader)
